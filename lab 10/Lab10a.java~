@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/**
+ * __test of big num___ 
+ * @author __onuralp avcı___
+ * @version __18.12.2019__
+ */ 
+public class Lab10a
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+      BigNum b1 = new BigNum();
+      BigNum b2 = new BigNum();
+      BigNum b3 = new BigNum();
+
+      // program code
+      System.out.println( "Start...");
+
+      b1.zero();
+      b2.create("110");
+      b3.copy(b2);
+      
+      System.out.println( b1);
+      System.out.println( b2);
+      System.out.println( b3);
+
+      System.out.println( "End.");
+   }
+
+}

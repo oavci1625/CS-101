@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Lab10b{
+   public static void main(String[] args){
+
+      Scanner scan = new Scanner( System.in);
+      //variables
+      String random;
+      BigNum[] list;
+      list = new BigNum[10];
+      int maxLocation;
+      int firstN;
+
+      //constants
+
+      //program code
+      for( int loop = 0; loop < 10; loop++){
+         BigNum b1 = new BigNum();
+         random = "";
+         for( int loop1 = 0; loop1 < BigNum.SIZE; loop1++){
+            random = random + String.valueOf( (int)(Math.random() * BigNum.BASE));
+         }
+         b1.create(random);
+         list[loop] = b1;
+      }
+      
+      for( int loop = 0; loop < 10; loop++){
+         System.out.println( list[loop]);
+      }
+      
+      System.out.println("Enter the number n:");
+      firstN = scan.nextInt();
+      
+      for( int n = firstN; n > 0 ; n = scan.nextInt() ){
+         maxLocation = 0;
+         for( int loop = 0; loop < n; loop++){
+            if( list[maxLocation].isLessThan(list[loop])){
+               maxLocation = loop;
+            }
+         }
+         list[maxLocation] = list[ n - 1];
+
+         for( int loop = 0; loop < 10; loop++){
+            System.out.println( list[loop]);
+         }
+
+         System.out.println("Enter the number n:");
+      }
+
+   } 
+}

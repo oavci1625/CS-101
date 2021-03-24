@@ -1,0 +1,111 @@
+package lab08;
+import java.util.Scanner;
+
+// header comment
+public class Library
+{
+   // properties
+   LibraryBook b1;
+   LibraryBook b2;
+   LibraryBook b3;
+   LibraryBook b4;
+
+
+   // constructors
+   
+   public int nullMaker(){
+      b1 = null;
+      b2 = null;
+      b3 = null;
+      b4 = null;
+      return 0;
+   }
+   //methods
+   public boolean isEmpty(){
+      if( b1 == null && b2 == null && b3 == null && b4 == null ){
+         return true;
+      }
+      else{
+         return false;
+      }
+   }
+
+   public String toString(){
+      if( b1 != null && b2 != null && b3 != null && b4 != null ){
+         return "" + b1.toString() + "\n\r" + b2.toString() + "\n\r" + b3.toString() + "\n\r" + b4.toString();
+      }
+      else{
+         return "Empty" ;
+      }
+   }
+
+   public boolean add(String title , String author){
+      if( b1 == null){
+         b1 = new LibraryBook();
+         b1.writeTitle(title);
+         b1.writeAuthor(author);
+         return true;
+      }
+      else if( b2 == null){
+         b2 = new LibraryBook();
+         b2.writeTitle(title);
+         b2.writeAuthor(author);
+         return true;
+      }
+      else if( b3 == null){
+         b3 = new LibraryBook();
+         b3.writeTitle(title);
+         b3.writeAuthor(author);
+         return true;
+      }
+      else if( b4 == null){
+         b4 = new LibraryBook();
+         b4.writeTitle(title);
+         b4.writeAuthor(author);
+         return true;
+      }
+      else{
+         return false;
+      }
+   }
+
+   public boolean remove( String book){
+      if (book.equals(b1.title)){
+         b1 = null;
+         return true;
+      }
+      else if (book.equals(b2.title)){
+         b2 = null;
+         return true;
+      }
+      else if (book.equals(b3.title)){
+         b3 = null;
+         return true;
+      }
+      else if (book.equals(b4.title)){
+         b4 = null;
+         return true;
+      }
+      else{
+         return false;
+      }
+   }
+
+   public LibraryBook findByTitle( String book){
+      if (book.equals(b1.title)){
+         return b1;
+      }
+      else if (book.equals(b2.title)){
+         return b2;
+      }
+      else if (book.equals(b3.title)){
+         return b3;
+      }
+      else if (book.equals(b4.title)){
+         return b4;
+      }
+      else{
+         return null;
+      }
+   }
+}
