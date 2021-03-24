@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class First
+{
+   public static void main(String args[])
+   {
+      Scanner scan = new Scanner(System.in);
+      int x = 5;
+      int y ;
+      y = scan.nextInt();
+      
+      if (y == 5)
+         System.out.println("it is 5");
+      else if (y < 0)
+         System.out.println("It is negative");
+      else if (y >= 0 && y<5)
+         System.out.println("It is in between 0 and 5");
+      else
+             System.out.println("It is more than 5");
+      y = scan.nextInt();
+   }
+}

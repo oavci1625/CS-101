@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author __your name___
+ * @version __date__
+ */ 
+public class TestDiceGame
+{
+   public static void main( String[] args)
+   {
+      Scanner scan = new Scanner( System.in);
+
+      // constants
+
+      // variables
+      DiceGame diceGame = new DiceGame();
+
+
+      // program code
+      System.out.println( "Start...");
+      
+      System.out.println("Number of throws for getting 6-6 is: " + diceGame.play() );
+
+      System.out.println( "End.");
+   }
+
+}

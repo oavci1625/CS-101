@@ -1,0 +1,24 @@
+// header comment
+public class Die
+{
+   // properties
+   int currentFace;
+
+   // constructors
+   public int roll()
+   {
+      return (int)(Math.random()*6) + 1 ;
+   }
+
+   public int getFaceValue()
+   {
+      return currentFace;
+   }
+
+   public String toString()
+   {
+      return "" + ((int)(Math.random()*6) + 1) ;
+   }
+
+   // methods
+}

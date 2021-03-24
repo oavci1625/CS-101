@@ -1,0 +1,5 @@
+Enter your number(s):
+Sum of the number(s) is 5324
+Average of the number(s) is 53
+Maximum of the number(s) is 98
+Minimum of the number(s) is -2

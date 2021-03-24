@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+/**
+ * __number counter___ 
+ * @onuralp avcý___
+ * @23/10/2019__
+ */ 
+
+public class Lab03a
+{
+   public static void main(String args[])
+   {
+     //constants
+     
+     //variables
+      Scanner scan = new Scanner(System.in);
+      int n;
+      int upton;
+      
+      //program code
+      
+      n = scan.nextInt();
+      upton = 1;
+      System.out.print("0 ");
+      while (upton <= n)
+      {
+          if (upton % 8 != 0)
+          { if (upton % 2 == 0)
+               System.out.print(upton*upton + " ");
+          }
+          else{
+             if (upton % 2 == 0)
+             System.out.println(upton*upton + " ");
+          }
+          upton = upton + 1 ;
+      }
+   }
+}

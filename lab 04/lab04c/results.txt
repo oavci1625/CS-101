@@ -1,0 +1,7 @@
+Start...
+Enter your number(s):
+Sum of the number(s) is 61
+Average of the number(s) is 10
+Maximum of the number(s) is 27
+Minimum of the number(s) is 2
+End.
